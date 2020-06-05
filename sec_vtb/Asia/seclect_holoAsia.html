@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HoloLive印度尼西亚</title>
+	<link rel="stylesheet" href="../../CSS/allsecpag.css" />
+</head>
+<link rel="stylesheet" type="text/css" href="css/demo.css"><!--演示页面样式，使用时可以不引用-->
+<link rel="stylesheet" href="../../CSS/seclect/main.css">
+<link rel="stylesheet" href="../../CSS/seclect/sortable.min.css">
+
+<script type="text/javascript" src="../../JS/seclect/sortable.min.js"></script>
+
+</head>
+<body>
+	<div class="navbor">
+		<ul>
+			<li><a href="#" class="back" onclick="javascript:history.back(-1);">⬅返回</a></li>
+			<li><a href="../../main.html">首页</li></a> 
+			<li><a href="../../about.html">关于</li></a>
+		</ul>
+		<div class="icon">
+			<a href="../../index.html"><img src="../../Images/icon.png"></a>
+		</div>
+	</div>
+	<main class="sortable">
+		<div class="container">
+			<div class="wrapper">
+				<!-- <ul class="sortable__nav nav">
+					<li>
+						<a data-sjslink="all" class="nav__link">
+							所有
+						</a>
+					</li>
+					<li>
+						<a data-sjslink="1st" class="nav__link">
+							一期生
+						</a>
+					</li>
+					<li>
+						<a data-sjslink="2nd" class="nav__link">
+							二期生
+						</a>
+					</li>
+				</ul> -->
+				<div id="sortable" class="sjs-default">
+					<div data-sjsel="1st">
+						<div class="card">
+								<img class="card__picture" src="../../Images/Vtuberlist/hololiveAsia/Airani.webp" alt="">
+								<div class="card-infos">
+									<h2 class="card__title">Airani Iofifteen / アイラニ・イオフィフティーン</h2>
+									<div class="link">
+											<a href="https://zh.moegirl.org/Airani_Iofifteen" target="view_window" title="萌娘百科"><img src="../../Images/mengniang.png"/ width="280px"></a> 
+											<a href="https://twitter.com/airaniiofifteen" target="view_window" title="推特"><img src="../../Images/twitter.png"/></a>
+											<a href="https://www.youtube.com/channel/UCAoy6rzhSf4ydcYjJw3WoVg" target="view_window" title="YouTube"><img src="../../Images/YouTube.png"/></a>
+											<a href="https://www.facebook.com/Airani-Iofifteen-hololive-ID-111788127142691/" target="view_window" title="Facebook"><img src="../../Images/facebook.jpg"/></a>
+											<a href="https://www.instagram.com/airani_iofifteen/" target="view_window" title="Instagram"><img src="../../Images/ins.jpg"/></a>
+										</p>
+									</div>
+								</div>
+						</div>
+					</div>
+					<div data-sjsel="1st">
+						<div class="card">
+								<img class="card__picture" src="../../Images/Vtuberlist/hololiveAsia/Moona.webp" alt="">
+								<div class="card-infos">
+									<h2 class="card__title">Moona Hoshinova / ムーナ・ホシノヴァ</h2>
+									<div class="link">
+											<a href="https://zh.moegirl.org/Moona_Hoshinova" target="view_window" title="萌娘百科"><img src="../../Images/mengniang.png"/ width="280px"></a> 
+											<a href="https://twitter.com/moonahoshinova" target="view_window" title="推特"><img src="../../Images/twitter.png"/></a>
+											<a href="https://www.youtube.com/channel/UCP0BspO_AMEe3aQqqpo89Dg" target="view_window" title="YouTube"><img src="../../Images/YouTube.png"/></a>
+											<a href="https://www.facebook.com/Moona-Hoshinova-hololive-ID-103251478005455/" target="view_window" title="Facebook"><img src="../../Images/facebook.jpg"/></a>
+											<a href="https://www.instagram.com/moonahoshinova/" target="view_window" title="Instagram"><img src="../../Images/ins.jpg"/></a>
+										</p>
+									</div>
+								</div>
+						</div>
+					</div>
+					<div data-sjsel="1st">
+						<div class="card">
+								<img class="card__picture" src="../../Images/Vtuberlist/hololiveAsia/Ayunda.webp" alt="">
+								<div class="card-infos">
+									<h2 class="card__title">Ayunda Risu / アユンダ・リス</h2>
+									<div class="link">
+											<a href="https://zh.moegirl.org/Ayunda_Risu" target="view_window" title="萌娘百科"><img src="../../Images/mengniang.png"/ width="280px"></a> 
+											<a href="https://twitter.com/ayunda_risu" target="view_window" title="推特"><img src="../../Images/twitter.png"/></a>
+											<a href="https://www.youtube.com/channel/UCOyYb1c43VlX9rc_lT6NKQw" target="view_window" title="YouTube"><img src="../../Images/YouTube.png"/></a>
+											<a href="https://facebook.com/Ayunda-Risu-hololive-ID-103806531282334/" target="view_window" title="Facebook"><img src="../../Images/facebook.jpg"/></a>
+											<a href="https://www.instagram.com/ayunda_risu/" target="view_window" title="Instagram"><img src="../../Images/ins.jpg"/></a>
+										</p>
+									</div>
+								</div>
+						</div>
+					</div>							
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<script type="text/javascript">
+		document.querySelector('#sortable').sortablejs();
+		$('#sortable').hover(function() {
+    $('#card').addClass('modal-active')
+}, function() {
+    $('#card').removeClass('modal-active')
+})
+	</script>
+</body>
+</html>

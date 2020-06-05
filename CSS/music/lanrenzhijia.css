@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document */
+	html {
+		overflow: hidden;
+	}
+	#imageFlow {
+		position: absolute;
+		width: 100%;
+		height: 80%;
+		left: 0%;
+		top: 10%;
+	}
+	#imageFlow .diapo {
+		position: absolute;
+		left: -1000px;
+		cursor: pointer;
+		-ms-interpolation-mode: nearest-neighbor;
+	}
+	#imageFlow .link {
+		border: dotted #fff 1px;
+		margin-left: -1px;
+		margin-bottom: -1px;
+	}
+	#imageFlow .bank {
+		visibility: hidden;
+	}
+	#imageFlow .text {
+		position: absolute;
+		left: 0px;
+		width: 100%;
+		bottom: 16%;
+		text-align: center;
+		font-family: 'YaHei';
+		z-index: 1000;
+	}
+	#imageFlow .legend {
+		font-size: 1.3em;
+	}
+	#imageFlow .scrollbar {
+		position: absolute;
+		left: 10%;
+		bottom: 10%;
+		width: 80%;
+		height: 16px;
+		z-index: 1000;
+	}
+	#imageFlow .track {
+		position: absolute;
+		left: 1%;
+		width: 98%;
+		height: 16px;
+		filter: alpha(opacity=30);
+		opacity: 0.3;
+	}
+	#imageFlow .arrow-left {
+		position: absolute;
+	}
+	#imageFlow .arrow-right {
+		position: absolute;
+		right: 0px;
+	}
+	#imageFlow .bar {
+		position: absolute;
+		height: 16px;
+		left: 25px;
+	}
+

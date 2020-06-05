@@ -1,0 +1,110 @@
+<html>
+<head>
+<title>注册</title>
+<link rel="stylesheet" href="layui/layui-v2.5.5/layui/css/layui.css">
+<link rel="stylesheet" href="fix/css/lanrenzhijia.css"/>
+<style type="text/css">
+	body {
+		background-image: url('Images/mainbg.png');
+		width: 100%;
+		height: 100%;
+		}
+		.bor{
+			position: absolute;
+			top: 280px;
+			left: 200px;
+			border: 1px solid gray;
+			width: 800px;
+			height: 300px;
+			border-radius:11px;
+			background-color: rgba(0, 0, 0,0.2);
+		}
+		.layui-colla-title {
+			border-radius:10px;
+		    position: relative;
+		    height: 42px;
+		    line-height: 42px;
+		    padding: 0 15px 0 35px;
+		    background-color: rgb(242, 242, 242，1);
+		    cursor: pointer;
+		    font-size: 14px;
+		    overflow: hidden;
+		}
+		.layui-badge-rim, .layui-colla-content, .layui-colla-item, .layui-collapse, .layui-elem-field, .layui-form-pane .layui-form-item[pane], .layui-form-pane .layui-form-label, .layui-input, .layui-layedit, .layui-layedit-tool, .layui-quote-nm, .layui-select, .layui-tab-bar, .layui-tab-card, .layui-tab-title, .layui-tab-title .layui-this:after, .layui-textarea {
+		    border-color: #e6e6e600;
+		}
+		.layui-colla-content {
+		    display: none;
+		    padding: 10px 15px;
+		    line-height: 22px;
+		    color: white;
+		}
+		.layui-btn{
+			padding: 0 28px;
+			background-color: rgba(0,150,136,0.5);
+		}
+		.nacklist{
+			float: left;
+		}
+		.inpuser input, .inppas input{
+			line-height: 30px;
+			width: 300px;
+			background-color: rgba(225,225,225,0.5);
+		}
+		.inpuser,.inppas{
+			margin:20px;
+		}
+		.gensec input{
+			margin :20px;
+			padding-right: 20px;
+		}
+		.text{
+		}
+</style>
+</head>
+<body>
+	<div class="layui-container">  
+	<div class="bor" style="text-align: center;">
+		<div class="layui-collapse" lay-accordion>
+			<div class="layui-colla-item">
+			    <h2 class="layui-colla-title" style="text-align: center;">注册</h2>
+				<div class="layui-colla-content layui-show">
+					<form action="#">
+					<div class="inpuser">
+						账号：
+						<input type="text" name="username" required placeholder="请输入登入账号">
+					</div>
+					<div class="inppas">
+						<p>密码：
+						<input type="password" name="password" required placeholder="请输入登入密码"></p>
+					</div>
+					<div class="gensec">
+						性别：
+						<input type="radio" name="sex" value="male"><i class="layui-icon">&#xe662;</i>
+						<input type="radio" name="sex" value="female" checked="checked">
+							<i class="layui-icon">&#xe661;</i>
+						<input type="radio" name="sex" value="" title="中性" disabled>中性
+					</div>
+					<button class="layui-btn" lay-submit lay-filter="formDemo">立即注册</button>
+					<a href="index.html" class="layui-btn" style="margin-left: 120px;">返回首页</a>
+					</form>
+			 	</div>
+			</div>
+		</div>`
+	</div>
+	</div>
+<link rel="stylesheet" href="layui/layui-v2.5.5/layui/layui.all.js">
+<script>
+	layui.use('element', function(){
+		var element = layui.element;
+	//一些事件监听
+		element.on('tab(demo)', function(data){
+		console.log(data);});
+	//监听提交
+	form.on('submit(formDemo)', function(data){
+		layer.msg(JSON.stringify(data.field));
+		return false;});
+	});
+</script>
+</body>
+</html>
