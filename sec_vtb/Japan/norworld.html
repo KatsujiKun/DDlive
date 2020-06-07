@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+</html>
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NorWorld</title>
+	<link rel="stylesheet" href="../../CSS/allsecpag.css" />
+</head>
+<link rel="stylesheet" type="text/css" href="css/demo.css"><!--演示页面样式，使用时可以不引用-->
+<link rel="stylesheet" href="../../CSS/seclect/main.css">
+<link rel="stylesheet" href="../../CSS/seclect/sortable.min.css">
+
+<script type="text/javascript" src="../../JS/seclect/sortable.min.js"></script>
+
+</head>
+<body>
+	<div class="navbor">
+		<ul>
+			<li><a href="#" class="back" onclick="javascript:history.back(-1);">⬅返回</a></li>
+			<li><a href="../../main.html">首页</li></a> 
+			<li><a href="../../about.html">关于</li></a>
+		</ul>
+		<div class="icon">
+			<a href="../../index.html"><img src="../../Images/icon.png"></a>
+		</div>
+	</div>
+	<main class="sortable">
+		<div class="container">
+			<div class="wrapper">
+				<!-- <ul class="sortable__nav nav">
+					<li>
+						<a data-sjslink="all" class="nav__link">
+							所有
+						</a>
+					</li>
+					<li>
+						<a data-sjslink="1st" class="nav__link">
+							一期生
+						</a>
+					</li>
+					<li>
+						<a data-sjslink="2nd" class="nav__link">
+							二期生
+						</a>
+					</li>
+				</ul> -->
+				<div id="sortable" class="sjs-default">
+					<div data-sjsel="#">
+						<div class="card">
+								<img class="card__picture" src="../../Images/Vtuberlist/norworld/noir.webp" alt="">
+								<div class="card-infos">
+									<h2 class="card__title">NoiR</h2>
+									<div class="link">
+											<a href="https://zh.moegirl.org/NoiR" target="view_window" title="萌娘百科"><img src="../../Images/mengniang.png"/ width="280px"></a> 
+											<a href="https://twitter.com/No_iR88" target="view_window" title="推特"><img src="../../Images/twitter.png"/></a>
+											<a href="https://www.youtube.com/channel/UC-3piUPtXhIu-KAdEs7fT8A/" target="view_window" title="YouTube"><img src="../../Images/YouTube.png"/></a>
+											<a href="https://www.showroom-live.com/NoiR_NoWorld" target="view_window" title="ShowRoom"><img src="../../Images/showroom.png"/></a>
+											<a href="https://www.pixiv.net/fanbox/creator/41161617" target="view_window" title="FanBox"><img src="../../Images/fanbox.png"/></a>
+											<a href="https://space.bilibili.com/434662713" target="view_window" title="BiliBili"><img src="../../Images/bilibili.png"/></a>
+											<a href="https://no-world.booth.pm/" target="view_window" title="Booth"><img src="../../Images/booth.png"/></a>
+									</div>
+								</div>
+						</div>
+					</div>
+					<div data-sjsel="1st">
+						<div class="card">
+								<img class="card__picture" src="../../Images/Vtuberlist/norworld/ayame.webp" alt="">
+								<div class="card-infos">
+									<h2 class="card__title">白黑黑白</h2>
+									<div class="link">
+											<a href="https://zh.moegirl.org/%E7%99%BD%E9%BB%91%E9%BB%91%E7%99%BD" target="view_window" title="萌娘百科"><img src="../../Images/mengniang.png"/ width="280px"></a> 
+											<a href="https://twitter.com/ayame_shirakura/media" target="view_window" title="推特"><img src="../../Images/twitter.png"/></a>
+											<a href="https://www.youtube.com/channel/UC-3piUPtXhIu-KAdEs7fT8A/" target="view_window" title="YouTube"><img src="../../Images/YouTube.png"/></a>
+											<a href="https://www.showroom-live.com/NoiR_NoWorld" target="view_window" title="ShowRoom"><img src="../../Images/showroom.png"/></a>
+											<a href="https://www.pixiv.net/fanbox/creator/41161617" target="view_window" title="FanBox"><img src="../../Images/fanbox.png"/></a>
+											<a href="https://no-world.booth.pm/" target="view_window" title="Booth"><img src="../../Images/booth.png"/></a>
+									</div>
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<script type="text/javascript">
+		document.querySelector('#sortable').sortablejs();
+		$('#sortable').hover(function() {
+    $('#card').addClass('modal-active')
+}, function() {
+    $('#card').removeClass('modal-active')
+})
+	</script>
+</body>
+</html>
