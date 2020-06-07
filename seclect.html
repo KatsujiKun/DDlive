@@ -1,116 +1,115 @@
 <!DOCTYPE html>
 <html lang="zh">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>选择企划</title>
-	<link rel="stylesheet" href="CSS/allsecpag.css">
-</head>
-<link rel="stylesheet" type="text/css" href="css/demo.css"><!--演示页面样式，使用时可以不引用-->
-<link rel="stylesheet" href="CSS/seclect/main.css">
-<link rel="stylesheet" href="CSS/seclect/sortable.min.css">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>选择企划</title>
+		<link rel="stylesheet" href="CSS/allsecpag.css">
+		<!-- <link rel="stylesheet" type="text/css" href="css/demo.css"><!--演示页面样式，使用时可以不引用-->
+		<link rel="stylesheet" href="CSS/seclect/main.css">
+		<link rel="stylesheet" href="CSS/seclect/sortable.min.css">
 
 
-<script type="text/javascript" src="JS/seclect/sortable.min.js"></script>
+		<script type="text/javascript" src="JS/seclect/sortable.min.js"></script>
 
-</head>
-<body>
-	<div class="navbor">
-		<ul>
-			<li><a href="#" class="back" onclick="javascript:history.back(-1);">⬅返回</a></li>
-			<li><a href="main.html">首页</li></a> 
-			<!-- <li><a href="#">曲</li></a>
+	</head>
+	<body>
+		<div class="navbor">
+			<ul>
+				<li><a href="#" class="back" onclick="javascript:history.back(-1);">⬅返回</a></li>
+				<li><a href="main.html">首页</a></li>
+				<!-- <li><a href="#">曲</li></a>
 			<li><a href="#">動画</li></a> -->
-			<li><a href="about.html">关于</li></a>
-		</ul>
-		<div class="icon">
-			<a href="index.html"><img src="Images/icon.png"></a>
+				<li><a href="about.html">关于</a></li>
+			</ul>
+			<div class="icon">
+				<a href="index.html"><img src="Images/icon.png"></a>
+			</div>
 		</div>
-	</div>
-	
-	<main class="sortable">
-		<div class="container">
-			<div class="wrapper">
-				<ul class="sortable__nav nav">
-					<li>
-						<a data-sjslink="all" class="nav__link">
-							所有
-						</a>
-					</li>
-					<li>
-						<a data-sjslink="Japan" class="nav__link">
-							日本Vtuber
-						</a>
-					</li>
-					<li>
-						<a data-sjslink="China" class="nav__link">
-							国内Vtuber
-						</a>
-					</li>
-					<li>
-						<a data-sjslink="One" class="nav__link">
-							个人势
-						</a>
-					</li>
-					<li>
-						<a data-sjslink="Team" class="nav__link">
-							其他事务所／事务企划／团体
-						</a>
-					</li>
-					<li>
-						<a data-sjslink="Asia" class="nav__link">
-							亚洲
-						</a>
-					</li>
-					<li>
-						<a data-sjslink="Other" class="nav__link">
-							其他
-						</a>
-					</li>
-				</ul>
-				<div id="sortable" class="sjs-default">
-					<div data-sjsel="Japan">
-						<div class="card">
-							<a href="sec_vtb/Japan/seclect_holo.html">
-								<img class="card__picture" src="Images/seclist/Japan/hololive.webp" alt="">
-								<div class="card-infos">
-									<h2 class="card__title">HoloLive</h2>
-								</div>
+
+		<main class="sortable">
+			<div class="container">
+				<div class="wrapper">
+					<ul class="sortable__nav nav">
+						<li>
+							<a data-sjslink="all" class="nav__link">
+								所有
 							</a>
-						</div>
-					</div>
-					<div data-sjsel="Japan">
-						<div class="card">
-							<a href="sec_vtb/Japan/seclect_nijisanji.html">
-								<img class="card__picture" src="Images/seclist/Japan/nijisanji.png" alt="">
-								<div class="card-infos">
-									<h2 class="card__title">Nijisanji/彩虹社</h2>
-								</div>
+						</li>
+						<li>
+							<a data-sjslink="Japan" class="nav__link">
+								日本Vtuber
 							</a>
-						</div>
-					</div>
-					<div data-sjsel="Japan">
-						<div class="card">
-							<a href="sec_vtb/Japan/Vivid.html">
-								<img class="card__picture" src="Images/seclist/Japan/Vivid.webp" alt="">
-								<div class="card-infos">
-									<h2 class="card__title">Vivid</h2>
-								</div>
+						</li>
+						<li>
+							<a data-sjslink="China" class="nav__link">
+								国内Vtuber
 							</a>
-						</div>
-					</div>
-					<div data-sjsel="Japan">
-						<div class="card">
-							<a href="sec_vtb/Japan/upd8.html">
-								<img class="card__picture" src="Images/seclist/Japan/upd8.png" alt="">
-								<div class="card-infos">
-									<h2 class="card__title">Upd8</h2>
-								</div>
+						</li>
+						<li>
+							<a data-sjslink="One" class="nav__link">
+								个人势
 							</a>
+						</li>
+						<li>
+							<a data-sjslink="Team" class="nav__link">
+								其他事务所／事务企划／团体
+							</a>
+						</li>
+						<li>
+							<a data-sjslink="Asia" class="nav__link">
+								亚洲
+							</a>
+						</li>
+						<li>
+							<a data-sjslink="Other" class="nav__link">
+								其他
+							</a>
+						</li>
+					</ul>
+					<div id="sortable" class="sjs-default">
+						<div data-sjsel="Japan">
+							<div class="card">
+								<a href="sec_vtb/Japan/seclect_holo.html">
+									<img class="card__picture" src="Images/seclist/Japan/hololive.webp" alt="">
+									<div class="card-infos">
+										<h2 class="card__title">HoloLive</h2>
+									</div>
+								</a>
+							</div>
 						</div>
-					</div>
-					<!-- <div data-sjsel="Japan">
+						<div data-sjsel="Japan">
+							<div class="card">
+								<a href="sec_vtb/Japan/seclect_nijisanji.html">
+									<img class="card__picture" src="Images/seclist/Japan/nijisanji.png" alt="">
+									<div class="card-infos">
+										<h2 class="card__title">Nijisanji/彩虹社</h2>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div data-sjsel="Japan">
+							<div class="card">
+								<a href="sec_vtb/Japan/Vivid.html">
+									<img class="card__picture" src="Images/seclist/Japan/Vivid.webp" alt="">
+									<div class="card-infos">
+										<h2 class="card__title">Vivid</h2>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div data-sjsel="Japan">
+							<div class="card">
+								<a href="sec_vtb/Japan/upd8.html">
+									<img class="card__picture" src="Images/seclist/Japan/upd8.png" alt="">
+									<div class="card-infos">
+										<h2 class="card__title">Upd8</h2>
+									</div>
+								</a>
+							</div>
+						</div>
+						<!-- <div data-sjsel="Japan">
 						<div class="card">
 							<a href="#">
 								<img class="card__picture" src="Images/seclist/Japan/DotLIVE.webp" alt="">
@@ -260,7 +259,7 @@
 							</a>
 						</div>
 					</div> -->
-					<!-- <div data-sjsel="China">
+						<!-- <div data-sjsel="China">
 						<div class="card">
 							<a href="#">
 								<img class="card__picture" src="Images/seclist/China/Aien.webp" alt="">
@@ -401,7 +400,7 @@
 							</div>
 						</div>
 					</div> -->
-					<!-- <div data-sjsel="Team">
+						<!-- <div data-sjsel="Team">
 						<div class="card">
 							<img class="card__picture" src="Images/seclist/China/战斗吧歌姬！.jpg" alt="">
 							<div class="card-infos">
@@ -409,27 +408,27 @@
 							</div>
 						</div>
 					</div> -->
-					<div data-sjsel="Asia">
-						<div class="card">
-							<a href="sec_vtb/Asia/YahooTV.html">
-								<img class="card__picture" src="Images/seclist/Asia/yahooTV.jpg" alt="">
-								<div class="card-infos">
-									<h2 class="card__title">YahooTV</h2>
+							<div data-sjsel="Asia">
+								<div class="card">
+									<a href="sec_vtb/Asia/YahooTV.html">
+										<img class="card__picture" src="Images/seclist/Asia/yahooTV.jpg" alt="">
+										<div class="card-infos">
+											<h2 class="card__title">YahooTV</h2>
+										</div>
+									</a>
 								</div>
-							</a>
-						</div>
-					</div>
-					<div data-sjsel="Asia">
-						<div class="card">
-							<a href="https://zh.moegirl.org/K%27WA">
-								<img class="card__picture" src="Images/seclist/Asia/K'WA.jpg" alt="">
-								<div class="card-infos">
-									<h2 class="card__title">K'WA</h2>
+							</div>
+							<div data-sjsel="Asia">
+								<div class="card">
+									<a href="https://zh.moegirl.org/K%27WA">
+										<img class="card__picture" src="Images/seclist/Asia/K'WA.jpg" alt="">
+										<div class="card-infos">
+											<h2 class="card__title">K'WA</h2>
+										</div>
+									</a>
 								</div>
-							</a>
-						</div>
-					</div>
-					<!-- <div data-sjsel="Asia">
+							</div>
+						<!-- <div data-sjsel="Asia">
 						<div class="card">
 							<a href="https://zh.moegirl.org/%E5%A4%8F%E6%97%A5%E8%91%B5">
 								<img class="card__picture" src="Images/seclist/Asia/Rgj.wdbp" alt="">
@@ -561,17 +560,17 @@
 							</a>
 						</div>
 					</div>-->
-					<div data-sjsel="Asia">
-						<div class="card">
-							<a href="sec_vtb/Asia/momomo.html">
-								<img class="card__picture" src="Images/seclist/Asia/momomo.jpg" alt="">
-								<div class="card-infos">
-									<h2 class="card__title">MOMOMO團／モモモ団</h2>
-								</div>
-							</a>
+						<div data-sjsel="Asia">
+							<div class="card">
+								<a href="sec_vtb/Asia/momomo.html">
+									<img class="card__picture" src="Images/seclist/Asia/momomo.jpg" alt="">
+									<div class="card-infos">
+										<h2 class="card__title">MOMOMO團／モモモ団</h2>
+									</div>
+								</a>
+							</div>
 						</div>
-					</div>
-					<!--<div data-sjsel="Asia">
+						<!--<div data-sjsel="Asia">
 						<div class="card">
 							<a href="https://zh.moegirl.org/Comdost">
 								<img class="card__picture" src="Images/seclist/Asia/Comdost.webp" alt="">
@@ -706,13 +705,13 @@
 							</div>
 						</div>
 					</div> -->
+					</div>
 				</div>
 			</div>
-		</div>
-	</main>
+		</main>
 
-	<script type="text/javascript">
-		document.querySelector('#sortable').sortablejs()
-	</script>
-</body>
+		<script type="text/javascript">
+			document.querySelector('#sortable').sortablejs();
+		</script>
+	</body>
 </html>
