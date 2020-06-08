@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Vivid</title>
+	<link rel="stylesheet" href="../../CSS/allsecpag.css" />
+</head>
+<link rel="stylesheet" type="text/css" href="css/demo.css"><!--演示页面样式，使用时可以不引用-->
+<link rel="stylesheet" href="../../CSS/seclect/main.css">
+<link rel="stylesheet" href="../../CSS/seclect/sortable.min.css">
+
+<script type="text/javascript" src="../../JS/seclect/sortable.min.js"></script>
+
+</head>
+<body>
+	<div class="navbor">
+		<ul>
+			<li><a href="#" class="back" onclick="javascript:history.back(-1);">⬅返回</a></li>
+			<li><a href="../../main.html">首页</li></a> 
+			<li><a href="../../about.html">关于</li></a>
+		</ul>
+		<div class="icon">
+			<a href="../../index.html"><img src="../../Images/icon.png"></a>
+		</div>
+	</div>
+	<main class="sortable">
+		<div class="container">
+			<div class="wrapper">
+				<!-- <ul class="sortable__nav nav">
+					<li>
+						<a data-sjslink="all" class="nav__link">
+							所有
+						</a>
+					</li>
+					<li>
+						<a data-sjslink="1st" class="nav__link">
+							一期生
+						</a>
+					</li>
+					<li>
+						<a data-sjslink="2nd" class="nav__link">
+							二期生
+						</a>
+					</li>
+				</ul> -->
+				<div id="sortable" class="sjs-default">
+					<div data-sjsel="#">
+						<div class="card">
+								<img class="card__picture" src="../../Images/Vtuberlist/VIC/Kaguya%20Luna.jpg" alt="">
+								<div class="card-infos">
+									<h2 class="card__title">辉夜月</h2>
+									<div class="link">
+											<a href="https://zh.moegirl.org/%E8%BE%89%E5%A4%9C%E6%9C%88" target="view_window" title="萌娘百科"><img src="../../Images/mengniang.png"/ width="280px"></a> 
+											<a href="https://twitter.com/_KaguyaLuna" target="view_window" title="推特"><img src="../../Images/twitter.png"/></a>
+											<a href="https://www.youtube.com/channel/UCQYADFw7xEJ9oZSM5ZbqyBw" target="view_window" title="YouTube"><img src="../../Images/YouTube.png"/></a>
+											<a href="https://www.instagram.com/kaguyaluna_official/" target="view_window" title="Instagram.tv"><img src="../../Images/ins.jpg"/></a>
+											<a href="https://space.bilibili.com/265224956/" target="view_window" title="BiliBili"><img src="../../Images/bilibili.png"/></a>
+											<a href="https://weibo.com/u/6435592578" target="view_window" title="微博"><img src="../../Images/weibo.png"/></a>
+											<a href="https://kaguyaluna.co.jp/" target="view_window" title="輝夜月オフィシャルファンクラブ『LUNAfam（β）』"><img src="../../Images/lun.png"/></a>
+									</div>
+								</div>
+						</div>
+					</div>
+					<div data-sjsel="1st">
+						<div class="card">
+								<img class="card__picture" src="../../Images/Vtuberlist/VIC/Pinky.webp" alt="">
+								<div class="card-infos">
+									<h2 class="card__title">Pinky Pop Hepburn</h2>
+									<div class="link">
+											<a href="https://zh.moegirl.org/Pinky_Pop_Hepburn" target="view_window" title="萌娘百科"><img src="../../Images/mengniang.png"/ width="280px"></a> 
+											<a href="https://twitter.com/PinkyPopHepburn" target="view_window" title="推特"><img src="../../Images/twitter.png"/></a>
+											<a href="https://www.youtube.com/channel/UC1pR2ig6NhndhvicEgclNdA" target="view_window" title="YouTube"><img src="../../Images/YouTube.png"/></a>
+											<!-- <a href="https://www.openrec.tv/user/shirakamifubuki" target="view_window" title="OPENREC.tv"><img src="../../Images/OPENREC.tv.png"/></a> -->
+											<a href="https://space.bilibili.com/393940396" target="view_window" title="BiliBili"><img src="../../Images/bilibili.png"/></a>
+									</div>
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<script type="text/javascript">
+		document.querySelector('#sortable').sortablejs();
+		$('#sortable').hover(function() {
+    $('#card').addClass('modal-active')
+}, function() {
+    $('#card').removeClass('modal-active')
+})
+	</script>
+</body>
+</html>
