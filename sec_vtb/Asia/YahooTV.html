@@ -1,34 +1,126 @@
 <!DOCTYPE html>
 <html lang="zh">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>YahooTV</title>
-	<link rel="stylesheet" href="../../CSS/allsecpag.css" />
-</head>
-<link rel="stylesheet" type="text/css" href="css/demo.css"><!--演示页面样式，使用时可以不引用-->
-<link rel="stylesheet" href="../../CSS/seclect/main.css">
-<link rel="stylesheet" href="../../CSS/seclect/sortable.min.css">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>YahooTV</title>
+		<link rel="stylesheet" href="../../CSS/allsecpag.css" />
+		<style>
+			.icon {
+				margin: 20px;
+				padding-left: 20px;
+			}
 
-<script type="text/javascript" src="../../JS/seclect/sortable.min.js"></script>
+			.navbor {
+				position: fixed;
+				width: 100%;
+				height: 100px;
+				z-index: 1;
+			}
 
-</head>
-<body>
-	<div class="navbor">
-		<ul>
-			<li><a href="#" class="back" onclick="javascript:history.back(-1);">⬅返回</a></li>
-			<li><a href="../../main.html">首页</li></a> 
-			<li><a href="../../about.html">关于</li></a>
-		</ul>
-		<div class="icon">
-			<a href="../../index.html"><img src="../../Images/icon.png"></a>
+			.navbor ul {
+				float: right;
+				margin: 10px;
+				padding: 20px;
+				padding-right: 60px;
+			}
+
+			.navbor li {
+				float: left;
+				margin: 20px;
+				padding-left: 20px;
+				list-style: none;
+			}
+
+			.navbor a {
+				text-decoration: none;
+				color: black;
+				font-size: 18px;
+			}
+
+			.about {
+				position: relative;
+				top: 200px;
+				text-align: center;
+			}
+
+			.about a {
+				text-decoration: none;
+				color: #00BCD4;
+			}
+
+			.card {
+				transition: all 1s;
+				-webkit-transition: all 1s;
+				/* Safari 和 Chrome */
+				-moz-transition: all 1s;
+				/* Firefox*/
+				-ms-transition: all 1s;
+				/* Internet Explorer */
+				-o-transition: all 1s;
+				/* Opera */
+				cursor: pointer;
+			}
+
+			.card:hover {
+				transform: scale(1.1);
+				-webkit-transform: scale(1.1);
+				-moz-transform: scale(1.1);
+				-ms-transform: scale(1.1);
+				-o-transform: scale(1.1);
+			}
+
+			#card {
+				transition: all 1s;
+			}
+
+			.link a {
+				text-decoration: none;
+				margin-right: 15px;
+			}
+
+			.link a:hover {
+				color: #00BCD4;
+			}
+
+			.link {
+				margin-top: 10px;
+				text-align: center;
+			}
+
+			.link a img {
+				width: 30px;
+			}
+
+			.link a img:hover {
+				border: 1px solid white;
+			}
+		</style>
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/demo.css">
+	<!--演示页面样式，使用时可以不引用-->
+	<link rel="stylesheet" href="../../CSS/seclect/main.css">
+	<link rel="stylesheet" href="../../CSS/seclect/sortable.min.css">
+
+	<script type="text/javascript" src="../../JS/seclect/sortable.min.js"></script>
+
+	</head>
+	<body>
+		<div class="navbor">
+			<ul>
+				<li><a href="#" class="back" onclick="javascript:history.back(-1);">⬅返回</a></li>
+				<li><a href="../../main.html">首页</li></a>
+				<li><a href="../../about.html">关于</li></a>
+			</ul>
+			<div class="icon">
+				<a href="../../index.html"><img src="../../Images/icon.png"></a>
+			</div>
 		</div>
-	</div>
-	<main class="sortable">
-		<div class="container">
-			<div class="wrapper">
-				<!-- <ul class="sortable__nav nav">
+		<main class="sortable">
+			<div class="container">
+				<div class="wrapper">
+					<!-- <ul class="sortable__nav nav">
 					<li>
 						<a data-sjslink="all" class="nav__link">
 							所有
@@ -45,52 +137,57 @@
 						</a>
 					</li>
 				</ul> -->
-				<div id="sortable" class="sjs-default">
-					<div data-sjsel="1st">
-						<div class="card">
+					<div id="sortable" class="sjs-default" id = "vtbs">
+						<div data-sjsel="1st">
+							<div class="card">
 								<img class="card__picture" src="../../Images/seclist/Asia/Miru_Yahoo3.webp" alt="">
 								<div class="card-infos">
 									<h2 class="card__title">杏仁ミル</h2>
 									<div class="link">
-											<a href="https://zh.moegirl.org/杏仁Miru" target="view_window" title="萌娘百科"><img src="../../Images/mengniang.png"/ width="280px"></a> 
-											<a href="https://twitter.com/AnninMirudayo" target="view_window" title="推特"><img src="../../Images/twitter.png"/></a>
-											<a href="https://www.youtube.com/channel/UCFahBR2wixu0xOex84bXFvg/featured" target="view_window" title="YouTube"><img src="../../Images/YouTube.png"/></a>
-											<a href="https://www.facebook.com/AnninMirudayo/" target="view_window" title="Facebook"><img src="../../Images/facebook.jpg"/></a>
-											<a href="https://space.bilibili.com/396751329/" target="view_window" title="Bilibili"><img src="../../Images/bilibili.png"/></a>
+										<a href="https://zh.moegirl.org/杏仁Miru" target="view_window" title="萌娘百科"><img src="../../Images/mengniang.png"/
+											 width="280px"></a>
+										<a href="https://twitter.com/AnninMirudayo" target="view_window" title="推特"><img src="../../Images/twitter.png" /></a>
+										<a href="https://www.youtube.com/channel/UCFahBR2wixu0xOex84bXFvg/featured" target="view_window" title="YouTube"><img
+											 src="../../Images/YouTube.png" /></a>
+										<a href="https://www.facebook.com/AnninMirudayo/" target="view_window" title="Facebook"><img src="../../Images/facebook.jpg" /></a>
+										<a href="https://space.bilibili.com/396751329/" target="view_window" title="Bilibili"><img src="../../Images/bilibili.png" /></a>
 										</p>
 									</div>
 								</div>
+							</div>
 						</div>
-					</div>
-					<div data-sjsel="1st">
-						<div class="card">
+						<div data-sjsel="1st">
+							<div class="card">
 								<img class="card__picture" src="../../Images/seclist/Asia/huni.webp" alt="">
 								<div class="card-infos">
 									<h2 class="card__title">虎妮</h2>
 									<div class="link">
-											<a href="https://zh.moegirl.org/%E8%99%8E%E5%A6%AE" target="view_window" title="萌娘百科"><img src="../../Images/mengniang.png"/ width="280px"></a> 
-											<a href="https://twitter.com/hooniefriends" target="view_window" title="推特"><img src="../../Images/twitter.png"/></a>
-											<a href="https://www.youtube.com/channel/UC6s0wLR0TZauzTVoGGw2r6g" target="view_window" title="YouTube"><img src="../../Images/YouTube.png"/></a>
-											<a href="https://www.facebook.com/pg/hoonie.friends/posts/?ref=page_internal" target="view_window" title="Facebook"><img src="../../Images/facebook.jpg"/></a>
-											<a href="https://tw.tv.yahoo.com/hoonie_friends/" target="view_window" title="YahooTV"><img src="../../Images/yahootv.png"/></a>
+										<a href="https://zh.moegirl.org/%E8%99%8E%E5%A6%AE" target="view_window" title="萌娘百科"><img src="../../Images/mengniang.png"/
+											 width="280px"></a>
+										<a href="https://twitter.com/hooniefriends" target="view_window" title="推特"><img src="../../Images/twitter.png" /></a>
+										<a href="https://www.youtube.com/channel/UC6s0wLR0TZauzTVoGGw2r6g" target="view_window" title="YouTube"><img
+											 src="../../Images/YouTube.png" /></a>
+										<a href="https://www.facebook.com/pg/hoonie.friends/posts/?ref=page_internal" target="view_window" title="Facebook"><img
+											 src="../../Images/facebook.jpg" /></a>
+										<a href="https://tw.tv.yahoo.com/hoonie_friends/" target="view_window" title="YahooTV"><img src="../../Images/yahootv.png" /></a>
 										</p>
 									</div>
 								</div>
-							</a>
+								</a>
+							</div>
 						</div>
-					</div>							
+					</div>
 				</div>
 			</div>
-		</div>
-	</main>
+		</main>
 
-	<script type="text/javascript">
-		document.querySelector('#sortable').sortablejs();
-		$('#sortable').hover(function() {
-    $('#card').addClass('modal-active')
-}, function() {
-    $('#card').removeClass('modal-active')
-})
-	</script>
-</body>
+		<script type="text/javascript">
+			document.querySelector('#sortable').sortablejs();
+			$('#sortable').hover(function() {
+				$('#card').addClass('modal-active')
+			}, function() {
+				$('#card').removeClass('modal-active')
+			})
+		</script>
+	</body>
 </html>
